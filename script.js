@@ -5,6 +5,13 @@ function insert( valor ){
     resultado.innerHTML += valor;
 }
 
+function calcular(){
+    let resultado = document.getElementById('resultado');
+  
+    let history = document.getElementById('history');
+    history.value = resultado.value;
+    resultado.value = eval(resultado.value);
+  }
 
 function clean() {
     resultado.innerHTML = ' ';
@@ -71,5 +78,10 @@ function confirma() {
         else if (e.key == "*") {
             insert("*");
         }
+        else if (e.key == "Enter") {
+            confirmar.focus()
+            calcular()
+        }
     })  
+    
 

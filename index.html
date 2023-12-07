@@ -12,6 +12,7 @@
     <div class="conteudo">
         <div class="calculator">
             <p class="result" id="resultado" >   </p>
+            <p class="historico" id="history" name="history"> </p>
 
             <table>
                 <tr>
@@ -23,30 +24,30 @@
                 </tr>
 
                 <tr>
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('7')" > 7 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('8')"> 8 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('9')"> 9 </button> </td>     
-                    <td><button class="btn especial" onkeypress="addteclado()" onclick= "insert('*')" > x </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('7')" > 7 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('8')"> 8 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('9')"> 9 </button> </td>     
+                    <td><button class="btn especial" onkeydown="addteclado()" onclick= "insert('*')" > x </button> </td>     
                 </tr>
 
                 <tr>
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('4')" > 4 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('5')" > 5 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()"onclick= "insert('6')"> 6 </button> </td>     
-                    <td><button class="btn especial" onkeypress="addteclado()" onclick= "insert('-')" > - </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('4')" > 4 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('5')" > 5 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()"onclick= "insert('6')"> 6 </button> </td>     
+                    <td><button class="btn especial" onkeydown="addteclado()" onclick= "insert('-')" > - </button> </td>     
                 </tr>
 
                 <tr>
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('1')" > 1 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('2')" > 2 </button> </td>     
-                    <td><button class="btn "onkeypress="addteclado()"  onclick= "insert('3')"> 3 </button> </td>     
-                    <td><button class="btn especial" onkeypress="addteclado()" onclick= "insert('+')"> + </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('1')" > 1 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('2')" > 2 </button> </td>     
+                    <td><button class="btn "onkeydown="addteclado()"  onclick= "insert('3')"> 3 </button> </td>     
+                    <td><button class="btn especial" onkeydown="addteclado()" onclick= "insert('+')"> + </button> </td>     
                 </tr>
 
                 <tr>
 
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('0')" > 0 </button> </td>     
-                    <td><button class="btn " onkeypress="addteclado()" onclick= "insert('.')" > . </button> </td>          
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('0')" > 0 </button> </td>     
+                    <td><button class="btn " onkeydown="addteclado()" onclick= "insert('.')" > . </button> </td>          
                     <td><button class="btn igual" style="width: 106px;" onclick= "confirma()"> = </button> </td>     
                 </tr>
 
