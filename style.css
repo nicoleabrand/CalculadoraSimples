@@ -73,3 +73,8 @@ table td {
     word-wrap: break-word;
     border-bottom: 1px solid #25968a;
 }
+#history{
+    color: white;
+
+    padding: 5px;
+}

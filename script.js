@@ -6,10 +6,7 @@ function insert( valor ){
 }
 
 function calcular(){
-    let resultado = document.getElementById('resultado');
-  
-    let history = document.getElementById('history');
-    history.value = resultado.value;
+    let resultado = document.getElementById('resultado');    
     resultado.value = eval(resultado.value);
   }
 
@@ -31,6 +28,9 @@ function confirma() {
     if(resultado.textContent != 'Erro') {
         document.getElementById("resultado").innerHTML = eval(resultado.innerHTML)
     }
+    let resultado3 = document.getElementById('resultado');
+    document.getElementById('history').innerHTML = resultado.innerHTML;
+
 }
     document.addEventListener("keypress", (e) => {
         if (e.key == "1") {
@@ -82,6 +82,4 @@ function confirma() {
             confirmar.focus()
             calcular()
         }
-    })  
-    
-
+    }) 
