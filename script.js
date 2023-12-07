@@ -25,7 +25,6 @@ function confirma() {
         document.getElementById("resultado").innerHTML = eval(resultado.innerHTML)
     }
 }
-function addteclado() {
     document.addEventListener("keypress", (e) => {
         if (e.key == "1") {
             insert("1");
@@ -56,5 +55,21 @@ function addteclado() {
         }
         else if (e.key == "0") {
             insert("0");
-        }})  
-}
+        }
+        else if (e.key == ".") {
+            insert(".");
+        }
+        else if (e.key == "+") {
+            insert("+");
+        }
+        else if (e.key == "-") {
+            insert("-");
+        }
+        else if (e.key == "/") {
+            insert("/");
+        }
+        else if (e.key == "*") {
+            insert("*");
+        }
+    })  
+
